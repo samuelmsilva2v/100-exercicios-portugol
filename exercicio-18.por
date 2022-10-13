@@ -1,22 +1,21 @@
 /*
-Faça um programa que leia as duas notas de um aluno em uma matéria e mostre na tela a sua média na disciplina.
+Faça um programa que leia o ano de nascimento de uma pessoa, calcule a idade dela e depois mostre se ela pode ou não votar.
 */
 programa
 {
 	
 	funcao inicio()
 	{
-		real nota1, nota2, media
+		inteiro ano_nasc, idade
 		
-		escreva("Digite a primeira nota: ")
-		leia(nota1)
+		escreva("Digite o seu ano de nascimento: ")
+		leia(ano_nasc)
 		
-		escreva("Digite a segunda nota: ")
-		leia(nota2)
-		
-		media = (nota1 + nota2) / 2
-		
-		escreva("\nNota 1: "+nota1+"\nNota 2: "+nota2+"\nA média entre "+nota1+" e "+nota2+" é igual a "+media)
+		idade = 2022 - ano_nasc
+
+		se(idade >= 16){
+			escreva("Você pode votar.")
+		}senao escreva("Você não pode votar.")
 	}
 }
 
@@ -26,7 +25,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 460; 
+ * @POSICAO-CURSOR = 416; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

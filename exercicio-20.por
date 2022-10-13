@@ -1,22 +1,19 @@
 /*
-Faça um programa que leia as duas notas de um aluno em uma matéria e mostre na tela a sua média na disciplina.
+Desenvolva um programa que leia um número inteiro e mostre se ele é PAR ou ÍMPAR.
 */
 programa
 {
 	
 	funcao inicio()
 	{
-		real nota1, nota2, media
+		inteiro numero 
 		
-		escreva("Digite a primeira nota: ")
-		leia(nota1)
-		
-		escreva("Digite a segunda nota: ")
-		leia(nota2)
-		
-		media = (nota1 + nota2) / 2
-		
-		escreva("\nNota 1: "+nota1+"\nNota 2: "+nota2+"\nA média entre "+nota1+" e "+nota2+" é igual a "+media)
+		escreva("Digite um numero inteiro: ")
+		leia(numero)
+
+		se(numero % 2 == 0){
+			escreva("O número é par.")
+		}senao escreva("O número é impar.")
 	}
 }
 
@@ -26,7 +23,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 460; 
+ * @POSICAO-CURSOR = 293; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
